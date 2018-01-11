@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/FlorianKempenich/ansible-role-nvm-node-npm.svg?branch=master)](https://travis-ci.org/FlorianKempenich/ansible-role-nvm-node-npm) [![Ansible Role](https://img.shields.io/ansible/role/23202.svg)](https://galaxy.ansible.com/FlorianKempenich/nvm-node-npm)
+[![Build Status](https://travis-ci.org/FlorianKempenich/ansible-role-zsh.svg?branch=master)](https://travis-ci.org/FlorianKempenich/ansible-role-zsh) [![Ansible Role](https://img.shields.io/ansible/role/23206.svg)](https://galaxy.ansible.com/FlorianKempenich/zsh)
 
 # Ansible role: `zsh`
 Install `zsh` and set it as the default shell.  
