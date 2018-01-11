@@ -31,4 +31,5 @@
       get_url:
         url: http://git.io/antigen
         dest: "{{ ansible_env.HOME }}/.antigen/antigen.zsh"
+        force: yes
   when: not skip_antigen
