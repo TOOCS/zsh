@@ -1,0 +1,34 @@
+- name: "Install OSX version"
+  homebrew:
+    name: zsh
+    state: latest
+    update_homebrew: yes
+  become: no
+  when: ansible_os_family == "Darwin"
+  
+- name: "Install UBUNTU version"
+  apt:
+    name: zsh
+    state: latest
+    update_cache: yes
+  become: yes
+  when: ansible_os_family == "Debian"
+
+- name: "Set zsh as default shell"
+  user:
+    name: "{{ ansible_user }}"
+    shell: /bin/zsh
+  become: yes
+
+- name: "Install `antigen`"
+  block:
+    - name: "Create 'antigen' directory"
+      file:
+        state: directory
+        path: "{{ ansible_env.HOME }}/.antigen"
+
+    - name: "Install 'antigen'"
+      get_url:
+        url: http://git.io/antigen
+        dest: "{{ ansible_env.HOME }}/.antigen/antigen.zsh"
+  when: not skip_antigen

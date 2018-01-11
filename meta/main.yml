@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Florian Kempenich
+  description: Install zsh and set it as the default shell. Also optionally install antigen.
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: MacOSX
+      versions:
+        - all
+
+  galaxy_tags:
+    - zsh
+    - shell
+    - antigen
+    - bash
+    - fish
+
+dependencies: []
