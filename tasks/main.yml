@@ -22,14 +22,9 @@
 
 - name: "Install `antigen`"
   block:
-    - name: "Create 'antigen' directory"
-      file:
-        state: directory
-        path: "{{ ansible_env.HOME }}/.antigen"
-
-    - name: "Install 'antigen'"
-      get_url:
-        url: http://git.io/antigen
-        dest: "{{ ansible_env.HOME }}/.antigen/antigen.zsh"
+    - name: "Install `antigen` - Checkout `antigen` to `~/.antigen`"
+      git:
+        repo: "https://github.com/zsh-users/antigen.git"
+        dest: "{{ ansible_env.HOME }}/.antigen"
         force: yes
   when: not skip_antigen
