@@ -1,8 +1,15 @@
-[![Build Status](https://travis-ci.org/FlorianKempenich/ansible-role-zsh.svg?branch=master)](https://travis-ci.org/FlorianKempenich/ansible-role-zsh) [![Ansible Role](https://img.shields.io/ansible/role/23206.svg)](https://galaxy.ansible.com/FlorianKempenich/zsh)
+[![Build Status](https://travis-ci.org/FlorianKempenich/TOOCS-zsh.svg?branch=master)](https://travis-ci.org/FlorianKempenich/TOOCS-zsh) [![Ansible Role](https://img.shields.io/ansible/role/23206.svg)](https://galaxy.ansible.com/FlorianKempenich/toocs_zsh)
 
-# Ansible role: `zsh`
+# TOOCS / Ansible Role: `toocs_zsh`
+
 Install `zsh` and set it as the default shell.  
 Also optionally install `antigen`
+
+> ### TOOCS?
+> TOOCS - The Opinionated One-Click Setups are a set of tools / ansible roles designed to setup a system in one click. They are a simple, reliable, way to setup a given tool. You can use them as is, or, inspecting their code, as a tutorial to follow step by step.
+>
+> They are, as their name suggests, opinionated: while they guarantee to setup the given tool in one click, they do **not** guarantee consistency in _how_ they achieve it, new releases might introduce breaking changes.  
+> Read the code and make sure you understand what's happening!
 
 ## Requirements
 This role is only working on Ubuntu/Debian & OSX.
@@ -32,7 +39,7 @@ Basic installation w/ antigen:
 ```
 - hosts: sandbox
   roles:
-      - FlorianKempenich.zsh
+      - FlorianKempenich.toocs_zsh
 ```
 
 Installation w/o antigen:
@@ -40,7 +47,7 @@ Installation w/o antigen:
 - hosts: sandbox
   tasks:
     - include_role:
-        name: FlorianKempenich.zsh
+        name: FlorianKempenich.toocs_zsh
       vars:
         skip_antigen: true
 ```
