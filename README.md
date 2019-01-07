@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/FlorianKempenich/TOOCS-zsh.svg?branch=master)](https://travis-ci.org/FlorianKempenich/TOOCS-zsh) [![Ansible Role](https://img.shields.io/ansible/role/36109.svg)](https://galaxy.ansible.com/FlorianKempenich/toocs_zsh)
+[![Build Status](https://travis-ci.org/TOOCS/zsh.svg?branch=master)](https://travis-ci.org/TOOCS/zsh) [![Ansible Role](https://img.shields.io/ansible/role/36109.svg)](https://galaxy.ansible.com/FlorianKempenich/toocs_zsh)
 
-# TOOCS / Ansible Role: `toocs_zsh`
+# TOOCS / Ansible Role: `FlorianKempenich.toocs_zsh`
 > #### /!\ This role has been renamed - Old name: `zsh` /!\
 
 Install `zsh` and set it as the default shell.  
