@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: toocs_zsh
+  role_name: zsh
   author: Florian Kempenich
   description: Install zsh and set it as the default shell. Also optionally install antigen.
 

@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/TOOCS/zsh.svg?branch=master)](https://travis-ci.org/TOOCS/zsh) [![Ansible Role](https://img.shields.io/ansible/role/36154.svg)](https://galaxy.ansible.com/FlorianKempenich/toocs_zsh)
+[![Build Status](https://travis-ci.org/TOOCS/zsh.svg?branch=master)](https://travis-ci.org/TOOCS/zsh) [![Ansible Role](https://img.shields.io/ansible/role/36154.svg)](https://galaxy.ansible.com/TOOCS/zsh)
 
-# TOOCS / Ansible Role: `FlorianKempenich.toocs_zsh`
-> #### /!\ This role has been renamed - Old name: `zsh` /!\
+# TOOCS / Ansible Role: `TOOCS.zsh`
+> #### /!\ This role has been renamed - Old name: `FlorianKempenich.zsh` /!\
 
 Install `zsh` and set it as the default shell.  
 Also optionally install `antigen`
@@ -40,7 +40,7 @@ Basic installation w/ antigen:
 ```
 - hosts: sandbox
   roles:
-      - FlorianKempenich.toocs_zsh
+      - TOOCS.zsh
 ```
 
 Installation w/o antigen:
@@ -48,7 +48,7 @@ Installation w/o antigen:
 - hosts: sandbox
   tasks:
     - include_role:
-        name: FlorianKempenich.toocs_zsh
+        name: TOOCS.zsh
       vars:
         skip_antigen: true
 ```
