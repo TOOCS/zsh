@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/TOOCS/zsh.svg?branch=master)](https://travis-ci.org/TOOCS/zsh) [![Ansible Role](https://img.shields.io/ansible/role/36154.svg)](https://galaxy.ansible.com/TOOCS/zsh)
+[![Build Status](https://travis-ci.org/TOOCS/zsh.svg?branch=master)](https://travis-ci.org/TOOCS/zsh) [![Ansible Role](https://img.shields.io/ansible/role/36201.svg)](https://galaxy.ansible.com/TOOCS/zsh)
 
 # TOOCS / Ansible Role: `TOOCS.zsh`
 > #### /!\ This role has been renamed - Old name: `FlorianKempenich.zsh` /!\
