@@ -20,6 +20,11 @@
     shell: /bin/zsh
   become: yes
 
+- name: "Touch ~/.zshrc"
+  file:
+    path: "{{ ansible_env.HOME }}/.zshrc"
+    state: touch
+
 - name: "Install `antigen`"
   block:
     - name: "Install `antigen` - Checkout `antigen` to `~/.antigen`"
